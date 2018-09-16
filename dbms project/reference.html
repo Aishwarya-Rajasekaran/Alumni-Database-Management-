@@ -1,0 +1,257 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Profile</title>
+  <link rel="stylesheet" type="text/css" href=" w3.css">
+  <link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
+  <style type="text/css">
+    body {
+      margin: 0;
+      body: 0;
+    }
+    ul {
+    list-style-type: none;
+	  margin: 0;
+    padding: 0;
+    width: 17%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    font-size: 150%;
+    /*border-right: solid 0.15em #a0a0a0;*/
+    }
+    li a {
+    display: block;
+    color: #000;
+    padding: 6% 0 6% 6%;
+    text-decoration: none;
+    transition: background 0.3s ease-in;
+    font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+    }
+    /*
+    li a.active {
+    background-color: #3f51b5;
+    color: white;
+    }
+    */
+    li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+    }
+    
+    #roll_no {
+      color: black;
+      border-radius: 0.25em;
+      position: static;
+      text-align: right;
+      font-size: 2em;
+      margin: 0;
+      background-color:#9fd1e2;
+      padding-right: 0.8em;
+      padding-top: 0.1em;
+      padding-bottom: 0.1em;
+      border: 2px solid #00897B;
+      font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+      color:#101010 ;
+    }  
+    #student_image {
+      float: left;
+      height: 250px;
+      width: 230px;
+      margin: 2em 2em 2em;
+      border:  2px solid #00897B;
+      border-radius: 0.2em;
+    }
+    #stu_name {
+      text-align: center;
+      padding-top: 2em;
+      font-size: 2.3em;
+      font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+      color:#101010 ;
+    }
+    #stu_description {
+      text-align: center;
+      font-size: 1.5em;
+      padding-left: 4em;
+      font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+    }
+    #stu_header {
+      overflow: auto;
+    }
+    .topic_headings {
+      padding-left: 2%;
+      margin: 0;
+      margin-bottom: 2%;
+      color:#101010 ;
+      font-weight: normal;
+      font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+      font-style: italic;
+    }
+    .topic_details {
+      overflow: auto;
+      padding-left: 2%;
+    }
+    .content {
+      padding-left: 5%;
+      font-size: 1.5em;
+      font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+    }
+    .content_base {
+      padding-left: 5%;
+      font-size: 1.5em;
+      font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+      text-align: center;
+    }
+    .headings {
+    	background-color:#9fd1e2; 
+    	border: 2px solid #00897B; 
+    	padding: 2%; 
+    	margin: 2%;
+      border-radius: 0.4em;
+    }
+    #main {
+      margin-left:17%;
+      height:auto; 
+      overflow: auto; 
+      padding-bottom: 2%;
+      background-color:#d6ebf2; 
+      padding:2%;
+    }
+  </style>
+</head>
+<body>
+
+  <!--Nav-->
+
+  <ul>
+    <li style="font-weight:bold; font-family:'Courier new'; font-size: 1.5em; display;block; padding:0.3em 0 0.3em 0; background-color:	#A0A0A0 ; color:white; text-align:center; /*border-bottom: 0.08em solid #a0a0a0;*/">PROFILE</li>
+    <li><a href="#eductional_background">Educational Background</a></li>
+    <li><a href="#internships">Internships and experience</a></li>
+    <li><a href="#strength">Strengths and skills</a></li>
+    <li><a href="#contact">Contact me</a></li>
+  </ul>
+
+  <!--Student Header-->
+  <!--This defines the basic info about the student-->
+  <!--The div gives a margin for the space for the nav bar-->
+  <div id="main">
+    <div id="roll_no">CED15I021</div>
+      <div id="stu_header">
+        <img id="student_image" src="anmol.jpg" alt="Anmol Gupta Profile Picture">
+        <p id="stu_name">Anmol Gupta</p>
+        <p id="stu_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae quasi voluptas sint laborum, asperiores minima architecto ducimus nemo necessitatibus. Earum tenetur quo, quam magnam non dolor et reiciendis cupiditate quidem.</p>
+      </div>
+
+      <!--Educational Background-->
+      <div id="eductional_background" class="headings">
+        <h1 class="topic_headings">Educational background</h1>
+        <div class="topic_deatils">
+          <!--1-->
+            <div class="content_base" style=" float: left; padding-right: 0%;">
+              PG/UG
+            </div>
+            <div class="content" style=" margin-left: 14%; padding-left: 4%; " >
+              Computer Engineering 2015 batch<br>
+              Other things<br>
+            </div>
+            <!--Empty div for blank space and seperation-->
+            <div style="height: 1.2em;"></div>
+            <!--2-->
+            <div class="content_base" style=" float: left; padding-right: 0%">
+              Schooling
+            </div>
+            <div class="content" style=" margin-left: 14%; padding-left: 4%">
+              New Era Senior Secondary School<br>
+              Nizampura<br>
+              Vadodara<br>
+            </div>
+        </div>
+      </div>
+
+      <!--Internships and experience-->
+      <div id="internships" class="headings">
+        <h1 class="topic_headings">Internships and experience</h1>
+        <div class="topic_deatils">
+          <!--1-->
+            <div class="content_base" style=" float: left; padding-right: 0%">
+              Working <br> Experience
+            </div>
+            <div class="content" style=" margin-left: 14%; padding-left: 4%">
+              Google for 3 months<br>
+              Facebook for 6 months<br>
+              XDA-Developers - All time<br>
+            </div>
+            <!--Empty div for blank space and seperation-->
+            <div style="height: 1em;"></div>
+            <!--2-->
+            <div class="content_base" style=" float: left; padding-right: 0%">
+              Internships
+            </div>
+            <div class="content" style=" margin-left: 14%; padding-left: 4%">
+              Microsoft<br>
+              Dell<br>
+              Lenovo<br>
+            </div>
+        </div>
+      </div>
+
+      <!--Strength and skills-->
+      <div id="strength"  class="headings">
+        <h1 class="topic_headings">Strength and skills</h1>
+        <div class="topic_deatils">
+          <!--1-->
+            <div class="content_base" style=" float: left; padding-right: 0%">
+              Strength 1<br>Strength 2<br>Strength 3
+            </div>
+
+            <div class="content" style=" margin-left: 14%; padding-left: 4%">
+              50%<br>
+              75%<br>
+              26%<br>
+            </div>
+            <!--Empty div for blank space and seperation-->
+            <div style="height: 1em;"></div>
+            <!--2-->
+            <div class="content_base" style=" float: left; padding-right: 0%">
+              Interests<br>and<br>hobbies
+            </div>
+            <div class="content" style=" margin-left: 14%; padding-left: 4%">
+              Basketball<br>
+              Drawing and painting<br>
+              Instrumental music<br>
+            </div>
+        </div>
+      </div>
+
+      <!--Contact Me-->
+      <div id="contact" class="headings">
+        <h1 class="topic_headings">Contact Me</h1>
+        <div class="topic_deatils">
+          <!--1-->
+            <div class="content_base" style=" float: left; padding-right: 0%">
+              Name:<br>Mobile No:<br>E-mail:
+            </div>
+            <div class="content" style=" margin-left: 14%; padding-left: 4%">
+              Anmol Gupta<br>
+              7358613761<br>
+              ced15i021@iiitdm.ac.in<br>
+            </div>
+            <!--Empty div for blank space and seperation-->
+            <div style="height: 1em;"></div>
+            <!--2-->
+            <div class="content_base" style=" float: left; padding-right: 0%">
+              Facebook<br>Gmail<br>Twitter
+            </div>
+            <div class="content" style=" margin-left: 14%; padding-left: 4%">
+              abcd@facebook.com<br>
+              abcd@gmail.com<br>
+              abcd@gmail.com<br>
+            </div>
+        </div>
+      </div>
+  </div>
+</body>
+</html>
